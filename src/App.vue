@@ -1,9 +1,10 @@
 <script setup>
-
+import navbar from './components/navbar.vue'
 </script>
  
 <template>
  <div>
+   <navbar></navbar>
   <div>
     <router-link :to="{ name: 'Home'}">Home</router-link> |
   </div>
