@@ -1,12 +1,11 @@
 <script setup>
 
-    
 </script>
  
 <template>
-this is home.
+this is recommended.
 </template>
  
-<style scoped>
+<style>
 
 </style>

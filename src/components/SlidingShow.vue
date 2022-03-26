@@ -1,10 +1,11 @@
 <script setup>
 
-    
 </script>
  
 <template>
-this is home.
+<div>
+  
+</div>
 </template>
  
 <style scoped>

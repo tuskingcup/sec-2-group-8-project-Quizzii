@@ -1,12 +1,11 @@
 <script setup>
 
-    
 </script>
  
 <template>
-this is home.
+this is lastest.
 </template>
  
-<style scoped>
+<style>
 
 </style>

@@ -1,16 +1,12 @@
 <script setup>
+import Navbar from './components/Navbar.vue';
+import SlidingShow from './components/SlidingShow.vue';
 
 </script>
  
 <template>
- <div>
-  <div>
-    <router-link :to="{ name: 'Home'}">Home</router-link> |
-  </div>
-  <div>
-    <router-view></router-view>
-  </div>
-</div>
+<Navbar/>
+<router-view></router-view>
 </template>
  
 <style scoped>

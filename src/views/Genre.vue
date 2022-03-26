@@ -1,12 +1,11 @@
 <script setup>
 
-    
 </script>
  
 <template>
-this is home.
+this is Genre.
 </template>
  
-<style scoped>
+<style>
 
 </style>
