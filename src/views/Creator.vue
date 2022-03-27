@@ -34,7 +34,7 @@ this is creator.
             </select>
         </div>
         <div class="ml-10">
-            <p class="font-bold text-2xl">ประเภท 2</p><br>
+            <p class="font-bold text-2xl">ประเภท 2</p>
             <select name="genre" class="p-2">
                 <option value="romantic">โรแมนติก</option>
                 <option value="drama">ดราม่า</option>
@@ -46,7 +46,7 @@ this is creator.
         <p class="font-bold text-2xl">ชื่อซีรี่ส์</p>
         <input class="my-3 p-3" type="text" maxlength="50" placeholder="น้อยกว่า 50 ตัวอักษร">
         <p class="font-bold text-2xl">เรื่องย่อ</p>
-        <textarea class="my-3" cols="50" rows="5" placeholder="น้อยกว่า 259 ตัวอักษร"></textarea>
+        <textarea class="my-3" cols="50" rows="5" placeholder="น้อยกว่า 250 ตัวอักษร"></textarea>
     </form>
     <span class="rounded-3xl bg-lime-500 text-white font-bold border-solid border-2 border-white hover:bg-slate-800 mx-5 px-8 py-4">
         สร้างซีรี่ส์

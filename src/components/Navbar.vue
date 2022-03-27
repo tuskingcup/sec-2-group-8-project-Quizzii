@@ -7,7 +7,7 @@
     <div class="flex bg-green-800 px-20 py-3  justify-between">
         <div class="flex justify-between text-slate-900 ">
             <router-link :to="{name:'Home'}">
-                <img src="../assets/Zonetoon.png" alt="Zonetoon" width="50px" height="50px" class="mr-10">
+                <img src="../assets/Zonetoon.png" alt="Zonetoon" width="50" height="50" class="mr-10">
             </router-link>
             <ul class="flex justify-between items-center font-bold text-xl ">
                 <li class="mx-7 hover:text-yellow-300"><router-link :to="{name:'Genre'}">ประเภท</router-link></li>
