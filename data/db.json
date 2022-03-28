@@ -1,20 +1,36 @@
 {
-    "notes": [
+    "cartoons": [
       {
         "id": 1,
-        "noteDetail": "Grading Exam"
+        "name": "Naruto Shippuden",
+        "genre": ["Action","Drama"],
+        "writer": "Masashi Kishimoto",
+        "synopsis": "Naruto",
+        "img": "../public/cover/naruto.jpg"
       },
       {
         "id": 2,
-        "noteDetail": "Visit Granpa"
+        "name": "Attack On Titan",
+        "genre": ["Action","Adventure"],
+        "writer": "Isayama Hajime",
+        "synopsis": "Fueled by the death of his mother at the hands of the titans, Eren Jaeger vows revenge against the species that have breached through the enclosing walls after 100 years of peace, threatening the remains of humanity.",
+        "img": "../public/cover/attack-on-titan.jpg"
       },
       {
         "id": 3,
-        "noteDetail": "Go to Shopping"
+        "name": "Naruto",
+        "genre": ["Action","Drama"],
+        "writer": "Masashi Kishimoto",
+        "synopsis": "Naruto",
+        "img": ""
       },
       {
-        "noteDetail": "Hello",
-        "id": 4
+        "id": 4,
+        "name": "Naruto",
+        "genre": ["Action","Drama"],
+        "writer": "Masashi Kishimoto",
+        "synopsis": "Naruto",
+        "img": ""
       }
     ]
   }
