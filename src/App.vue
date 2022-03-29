@@ -10,7 +10,9 @@ import navbar from './components/navbar.vue'
   </div>
 </div>
 </template>
- 
-<style>
 
+<style>
+.navbar {
+  position: fixed;
+}
 </style>

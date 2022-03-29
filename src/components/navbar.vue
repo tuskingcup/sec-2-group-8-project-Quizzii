@@ -3,7 +3,7 @@ import searchBar from '../components/searchBar.vue'
 </script>
  
 <template>
-<nav class="relative rounded-b-xl select-none bg-[#2b2012] lg:flex lg:items-stretch w-full">
+<nav class="fixed overflow-hidden rounded-b-xl bg-[#2b2012] lg:flex lg:items-stretch w-full z-10">
   <div class="flex flex-no-shrink items-stretch h-20">
     <img src="../assets/ToonZone.jpg" class="flex-no-grow flex-no-shrink relative top-2 left-24 w-16 h-16 "> 
   </div>
@@ -25,4 +25,5 @@ import searchBar from '../components/searchBar.vue'
   color : #d67747;
   border-radius: 0.5rem;
 }
+
 </style>

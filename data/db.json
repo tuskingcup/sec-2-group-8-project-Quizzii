@@ -1,20 +1,92 @@
 {
-    "notes": [
-      {
-        "id": 1,
-        "noteDetail": "Grading Exam"
-      },
-      {
-        "id": 2,
-        "noteDetail": "Visit Granpa"
-      },
-      {
-        "id": 3,
-        "noteDetail": "Go to Shopping"
-      },
-      {
-        "noteDetail": "Hello",
-        "id": 4
-      }
-    ]
-  }
+  "cartoons": [
+    {
+      "id": 1,
+      "name": "Naruto Shippuden",
+      "genre": ["Action","Drama"],
+      "writer": "Masashi Kishimoto",
+      "synopsis": "Naruto",
+      "img": "/images/naruto.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Attack On Titan",
+      "genre": ["Action","Adventure"],
+      "writer": "Isayama Hajime",
+      "synopsis": "Fueled by the death of his mother at the hands of the titans, Eren Jaeger vows revenge against the species that have breached through the enclosing walls after 100 years of peace, threatening the remains of humanity.",
+      "img": "/images/attack-on-titan.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Naruto",
+      "genre": ["Action","Drama"],
+      "writer": "Masashi Kishimoto",
+      "synopsis": "Naruto",
+      "img": ""
+    },
+    {
+      "id": 4,
+      "name": "Naruto",
+      "genre": ["Action","Drama"],
+      "writer": "Masashi Kishimoto",
+      "synopsis": "Naruto",
+      "img": ""
+    },
+    {
+      "id": 3,
+      "name": "Naruto",
+      "genre": ["Action","Drama"],
+      "writer": "Masashi Kishimoto",
+      "synopsis": "Naruto",
+      "img": ""
+    },
+    {
+      "id": 3,
+      "name": "Naruto",
+      "genre": ["Action","Drama"],
+      "writer": "Masashi Kishimoto",
+      "synopsis": "Naruto",
+      "img": ""
+    },
+    {
+      "id": 3,
+      "name": "Naruto",
+      "genre": ["Action","Drama"],
+      "writer": "Masashi Kishimoto",
+      "synopsis": "Naruto",
+      "img": ""
+    },
+    {
+      "id": 3,
+      "name": "Naruto",
+      "genre": ["Action","Drama"],
+      "writer": "Masashi Kishimoto",
+      "synopsis": "Naruto",
+      "img": ""
+    },
+    {
+      "id": 3,
+      "name": "Naruto",
+      "genre": ["Action","Drama"],
+      "writer": "Masashi Kishimoto",
+      "synopsis": "Naruto",
+      "img": ""
+    },
+    {
+      "id": 3,
+      "name": "Naruto",
+      "genre": ["Action","Drama"],
+      "writer": "Masashi Kishimoto",
+      "synopsis": "Naruto",
+      "img": ""
+    },
+    {
+      "id": 3,
+      "name": "Naruto",
+      "genre": ["Action","Drama"],
+      "writer": "Masashi Kishimoto",
+      "synopsis": "Naruto",
+      "img": ""
+    }
+  ]
+}
