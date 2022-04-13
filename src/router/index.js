@@ -1,20 +1,18 @@
-import {createRouter, createWebHistory} from 'vue-router'
-import Home from '../views/Home.vue'
-import Popular from '../views/Popular.vue'
-
-
+import {createRouter,createWebHistory} from 'vue-router'
+import Home from '../views/HomePage.vue'
+import Quiz from '../views/QuizPage.vue'
 
 const history = createWebHistory();
 const routes = [
     {
-        path: '/',
+        path : '/',
         name: 'Home',
         component: Home
     },
     {
-        path: '/popular',
-        name: 'Popular',
-        component: Popular
+        path : '/quiz-page',
+        name: 'Quiz',
+        component: Quiz
     }
 ]
 
