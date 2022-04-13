@@ -1,5 +1,6 @@
 import {createRouter,createWebHistory} from 'vue-router'
 import Home from '../views/HomePage.vue'
+import QuizList from '../views/QuizListPage.vue'
 import Quiz from '../views/QuizPage.vue'
 
 const history = createWebHistory();
@@ -10,9 +11,14 @@ const routes = [
         component: Home
     },
     {
-        path : '/quiz-page',
+        path : '/quiz-list-page',
+        name: 'QuizList',
+        component: QuizList
+    },
+    {
+        path : '/quiz-page/:URL',
         name: 'Quiz',
-        component: Quiz
+        component: Quiz,
     }
 ]
 

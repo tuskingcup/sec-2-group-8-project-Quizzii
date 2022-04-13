@@ -24,7 +24,7 @@ fetch('https://opentdb.com/api.php?amount=10&category=11&difficulty=medium&type=
     <p>quiz</p>
   </div>
   <div class="absolute cursor-pointer mt-36 tracking-[.75em]">
-    <router-link :to="{name : 'Quiz'}" class="animate-pulse hover:text-lg">start</router-link>
+    <router-link :to="{name : 'QuizList'}" class="animate-pulse hover:text-lg">start</router-link>
   </div>
 </div>
 </template>
