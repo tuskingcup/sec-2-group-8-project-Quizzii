@@ -1,18 +1,50 @@
 {
   "quizList": [
-    {
-      "category": "Sports",
-      "question": "What is the nickname of Northampton town&#039;s rugby union club?",
-      "choice": { "a" : "Saints", "b" : "Harlequins", "c" : "Saracens" , "d" : "Wasps"},
-      "correct_answer": "a"
-      
+    { 
+      "id": 1,
+      "title": "Food",
+      "questionList": [
+        {
+          "question": "What is color of Banana?",
+          "choice" : {
+          "a": "Yellow",
+          "b": "Red",
+          "c": "Pink",
+          "d": "Purple"
+        },
+          "answer" : "a"
+        },
+        {
+          "question": "What raw material make us feel spicy?",
+          "choice" : {
+          "a": "Tomato",
+          "b": "Garlic",
+          "c": "Chili",
+          "d": "Cucumber"
+        },
+          "answer" : "c"
+        }
+        
+      ]
     },
     {
-      "category": "Food",
-      "question": "What is color of Banana?",
-      "choice": { "a" : "Red", "b" : "Pink", "c" : "Purple" , "d" : "Yellow"},
-      "correct_answer": "d"
-      
+      "id": 2,
+      "title": "Sports",
+      "questionList" : [
+        {
+          "question" : "What is the nickname of Northampton towns rugby union club?",
+          "choice" : {
+          "a" : "Saints",
+          "b" : "Harlequins",
+          "c" : "Saracens",
+          "d" : "Wasps"
+        },
+          "answer" : "a"
+        }
+      ]
     }
+      
+    
+
   ]
   }

@@ -1,6 +1,5 @@
 <script setup>
 import QuizTypeSelect from '../components/QuizTypeSelect.vue'
-
 import { ref, onBeforeMount} from 'vue'
 const quizList = ref([])
 const httpQuiz = ' http://localhost:5000/quizList'
@@ -20,12 +19,15 @@ onBeforeMount(async () => {
   await getQuizList();
 })
 
+
 const selectQuizType = ref('')
 
 const selectCategory = (category) => {
   selectQuizType.value = category;
   console.log(selectQuizType.value)
 }
+
+
 
 </script>
 
