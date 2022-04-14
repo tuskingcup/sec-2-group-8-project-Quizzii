@@ -1,6 +1,6 @@
 <script setup>
 import QuizTypeSelect from '../components/QuizTypeSelect.vue'
-import { ref, onBeforeMount} from 'vue'
+import { ref, onBeforeMount } from 'vue'
 const quizList = ref([])
 const httpQuiz = ' http://localhost:5000/quizList'
 
@@ -16,23 +16,22 @@ const getQuizList = async () => {
 }
 
 onBeforeMount(async () => {
-  await getQuizList();
+  await getQuizList()
 })
-
 
 const selectQuizType = ref('')
 
 const selectCategory = (category) => {
-  selectQuizType.value = category;
+  selectQuizType.value = category
   console.log(selectQuizType.value)
 }
-
-
-
 </script>
 
 <template>
-  <QuizTypeSelect :listQuiz="quizList" @selectType="selectCategory"></QuizTypeSelect>
+  <QuizTypeSelect
+    :listQuiz="quizList"
+    @selectType="selectCategory"
+  ></QuizTypeSelect>
 </template>
 
 <style></style>
