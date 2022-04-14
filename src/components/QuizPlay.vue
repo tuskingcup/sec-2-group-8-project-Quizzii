@@ -1,6 +1,6 @@
 <script setup>
 import { useRoute } from 'vue-router'
-defineEmits(['submit', 'selectAns', 'nextQuestion'])
+defineEmits(['submit', 'selectAns', 'nextQuestion', 'showResults'])
 
 const props = defineProps({
   questionList: {
@@ -26,17 +26,23 @@ const props = defineProps({
   },
   wrongScore:{
     type: Number,
+  },
+  quizLength:{
+    type: Number,
+  },
+  showResult:{
+    type: Boolean,
   }
 })
 </script>
 
 <template>
-  <div class="m-5">
-    <div>Your scored {{ score }} / {{ questionList.questionList.length }}</div>
+  <div class="m-5" v-if="currentQuestion < quizLength">
+    <div>Your scored {{ score }} / {{ quizLength }}</div>
 
     <h1>
       Question {{ currentQuestion + 1 }} :
-      {{ questionList.questionList[currentQuestion].question }}
+      {{ questionList.questionList[currentQuestion]['question'] }}
     </h1>
 
     <label
@@ -44,11 +50,15 @@ const props = defineProps({
         .choice"
       :key="index"
       class="flex mt-4"
-      :class="{ 'hover:text-slate-600 cursor-pointer': selected == '' }"
+      :class="{ 'hover:text-slate-600 cursor-pointer': selected == '' },
+  {'bg-green-200 text-white' : index == questionList.questionList[currentQuestion].answer && selected != ''},
+      {'bg-red-500 ' : selected == index}
+      
+      "
     >
       <input
         type="radio"
-        class="hidden"
+        
         :disabled="selected != ''"
         :value="index"
         @change="$emit('selectAns', index)"
@@ -57,14 +67,19 @@ const props = defineProps({
     </label>
   </div>
   <button
-    v-show="selected != ''"
-    class="mt-5 border-2 px-2"
+    class="mt-5 border-2 px-2" v-show="selected != '' && currentQuestion < quizLength-1"
     @click="$emit('nextQuestion', index)"
   >
     Next Question
   </button>
-  <div v-show="currentQuestion = "
-  class="mt-5">
+   <button
+    class="mt-5 border-2 px-2"  v-show="selected != '' && currentQuestion == quizLength-1"
+    @click="$emit('showResults', showResult = true)"
+  >
+    Finish
+  </button>
+  <div
+  class="mt-5" v-show="showResult ==  true">
       <h1>Results</h1>
       <p>Correct Answers: <span>{{correctScore}} </span> Wrong Answers: <span>{{wrongScore}} </span> </p>
   </div>

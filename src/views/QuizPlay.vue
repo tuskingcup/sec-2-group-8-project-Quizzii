@@ -7,10 +7,14 @@ const { params } = useRoute()
 const URL = 'http://localhost:5000/quizList'
 console.log(params.id)
 
+let quizLength = ref(0)
+
 const getQuizQuestions = async (param) => {
   const res = await fetch(`${URL}/${param}`)
   const data = await res.json()
   questionList.value = data
+  quizLength.value = Object.keys(questionList.value.questionList).length
+  console.log(quizLength.value)
   console.log(data)
 }
 
@@ -19,6 +23,8 @@ onBeforeMount(async () => {
 })
 
 let questionList = ref({})
+
+
 
 const currentQuestion = ref(0)
 
@@ -40,6 +46,8 @@ const selectAns = (ans) => {
   } else {
     wrongScore.value++
   }
+  
+
   console.log(`Your Answer: ${selected.value}`)
   console.log(`Correct score: ${correctScore.value}`)
   console.log(`Wrong score: ${wrongScore.value}`)
@@ -54,6 +62,9 @@ const nextQuestion = () => {
   selected.value = ''
 }
 
+
+
+
 </script>
 
 <template>
@@ -65,6 +76,7 @@ const nextQuestion = () => {
     :score="score"
     :correctScore="correctScore"
     :wrongScore="wrongScore"
+    :quizLength="quizLength"
     @selectAns="selectAns"
     @nextQuestion="nextQuestion"
   ></QuizPlay>
