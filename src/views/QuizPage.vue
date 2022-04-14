@@ -23,11 +23,12 @@ onBeforeMount(async() => {
 <div v-for="(quiz,index) in quizList.questionList" class="p-5">
     <p>NO : {{index + 1}}</p>
     <p>Question : {{quiz.question}}</p>
-    <input type="checkbox">{{quiz.a}}
-    <input type="checkbox">{{quiz.b}}
-    <input type="checkbox">{{quiz.c}}
-    <input type="checkbox">{{quiz.d}}
-    <hr>
+    <ul>
+        <li><input type="checkbox">{{quiz.a}}</li>
+        <li><input type="checkbox">{{quiz.b}}</li>
+        <li><input type="checkbox">{{quiz.c}}</li>
+        <li><input type="checkbox">{{quiz.d}}</li>
+    </ul>
 </div>
 </template>
  
