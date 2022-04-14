@@ -1,37 +1,37 @@
-import {createRouter, createWebHistory} from 'vue-router'
-import Home from '../views/Home.vue'
-import Genre from '../views/Genre.vue'
-import Recommend from '../views/Recommend.vue'
-import Lastest from '../views/Lastest.vue'
-import Creator from '../views/Creator.vue'
+import {createRouter,createWebHistory} from 'vue-router'
+import Home from '../views/HomePage.vue'
+import QuizList from '../views/QuizListPage.vue'
+import Quiz from '../views/QuizPage.vue'
+import NotFound from '../views/NotFound.vue'
+import CreateQuiz from '../views/CreateQuiz.vue'
 
 const history = createWebHistory();
 const routes = [
     {
-        path: '/',
+        path : '/',
         name: 'Home',
         component: Home
     },
     {
-        path: '/genre',
-        name: 'Genre',
-        component: Genre
+        path : '/quiz-list-page',
+        name: 'QuizList',
+        component: QuizList
     },
     {
-        path: '/recommend',
-        name: 'Recommend',
-        component: Recommend
+        path : '/quiz-page/:id',
+        name: 'Quiz',
+        component: Quiz,
     },
     {
-        path: '/lastest',
-        name: 'Lastest',
-        component: Lastest
+        path : '/create-quiz',
+        name: 'CreateQuiz',
+        component: CreateQuiz,
     },
     {
-        path: '/creator',
-        name: 'Creator',
-        component: Creator
-    },
+        path: '/:catchNotMatchPath(.*)',
+        name: 'NotFound',
+        component: NotFound
+    }
 ]
 
 const router = createRouter({history,routes})
