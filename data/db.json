@@ -8,7 +8,7 @@
       "img" : "https://picsum.photos/seed/picsum/400/225",
       "questionList" : [
         {
-          "question" : "Which retired American football quarterback played himself in &#039;Ace Ventura: Pet Detective&#039; and &#039;Little Nicky&#039;?",
+          "question" : "Which retired American football quarterback played himself in Ace Ventura: Pet Detective and Little Nicky?",
           "a" :  "John Elway",
           "b" : "Tom Brady",
           "c" : "Dan Marino",
@@ -16,7 +16,7 @@
           "answer" : "a"
         },
         {
-          "question" : "In which 1973 film does Yul Brynner play a robotic cowboy who malfunctions and goes on a killing\tspree?",
+          "question" : "In which 1973 film does Yul Brynner play a robotic cowboy who malfunctions and goes on a killing spree?",
           "a" :  "Runaway",
           "b" : "Westworld",
           "c" : "Android",
@@ -24,7 +24,7 @@
           "answer" : "b"
         },
         {
-          "question" : "Which iconic character is featured in movies such as &quot;The Enforcer&quot;, &quot;Sudden Impact&quot;, and &quot;The Dead Pool&quot;?",
+          "question" : "Which iconic character is featured in movies such as The Enforcer, Sudden Impact, and The Dead Pool?",
           "a" :  "James Bond",
           "b" : "Indiana Jones",
           "c" : "Harry Potter",
@@ -32,7 +32,7 @@
           "answer" : "d"
         },
         {
-          "question" : "In the 1994 movie &quot;Speed&quot;, what is the minimum speed the bus must go to prevent to bomb from exploding?",
+          "question" : "In the 1994 movie Speed, what is the minimum speed the bus must go to prevent to bomb from exploding?",
           "a" :  "40 mph",
           "b" : "50 mph",
           "c" : "60 mph",
@@ -40,7 +40,7 @@
           "answer" : "b"
         },
         {
-          "question" : "What is the name of the villian in the 2015 Russian-American Sci-Fi Movie &quot;Hardcore Henry&quot;?",
+          "question" : "What is the name of the villian in the 2015 Russian-American Sci-Fi Movie Hardcore Henry?",
           "a" :  "Estelle",
           "b" : "Jimmy",
           "c" : "Akan",
@@ -48,7 +48,7 @@
           "answer" : "c"
         },
         {
-          "question" : "Which one of these actors is said to be cut from the film &#039;E.T. the Extra-Terrestrial&#039;?",
+          "question" : "Which one of these actors is said to be cut from the film E.T. the Extra-Terrestrial?",
           "a" : "Harrison Ford",
           "b" : "Andy Kaufman",
           "c" : "Arnold Schwarzenegger",
@@ -72,7 +72,7 @@
           "answer" : "d"
         },
         {
-          "question" : "In the 2014 film &quot;Birdman&quot;, what is the primary instrument in the score?",
+          "question" : "In the 2014 film Birdman, what is the primary instrument in the score?",
           "a" :  "Violin",
           "b" : "Actual Live Birds Singing",
           "c" : "Drums",
@@ -97,7 +97,7 @@
       "img" : "https://picsum.photos/seed/picsum/400/225",
       "questionList" : [
         {
-          "question" : "What is the nickname of Northampton town&#039;s rugby union club?",
+          "question" : "What is the nickname of Northampton towns rugby union club?",
           "a" :  "Saints",
           "b" : "Harlequins",
           "c" : "Saracens",
@@ -105,7 +105,7 @@
           "answer" : "a"
         },
         {
-          "question" : "What is the nickname of Northampton town&#039;s rugby union club?",
+          "question" : "What is the nickname of Northampton towns rugby union club?",
           "a" :  "Saints",
           "b" : "Harlequins",
           "c" : "Saracens",
