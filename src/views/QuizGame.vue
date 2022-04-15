@@ -145,7 +145,7 @@ const nextQuest = () => {
                             ? 'disabled'
                             : ''               
                     }`">
-                <input type="radio" 
+                <input type="checkbox" 
                 :name="getCurrentQuiz.index" 
                 :value="index"
                 :v-model="getCurrentQuiz.select"
