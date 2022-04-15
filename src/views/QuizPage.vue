@@ -1,37 +1,37 @@
 <script setup>
-import {useRoute} from 'vue-router'
-import {onBeforeMount,ref} from 'vue'
-const {params} = useRoute()
-const URL = 'http://localhost:5000/quizList'
-const quizList = ref({})
-console.log(params.id)
+import QuizTypeSelect from '../components/QuizTypeSelect.vue'
+import { ref, onBeforeMount } from 'vue'
+const quizList = ref([])
+const httpQuiz = ' http://localhost:5000/quizList'
 
-const getQuiz = async(param) => {
-    const res = await fetch(`${URL}/${param}`)
-    const data = await res.json()
-    quizList.value = data
-    console.log(quizList.value.questionList)
+const getQuizList = async () => {
+  const resQuiz = await fetch(httpQuiz)
+  if (resQuiz.status === 200) {
+    quizList.value = await resQuiz.json()
+    console.log(quizList.value)
+  } else {
+    console.log(`error, cannot get quiz list`)
+  }
+  // count.value = songList.value.length
 }
 
-onBeforeMount(async() => {
-    await getQuiz(params.id)
+onBeforeMount(async () => {
+  await getQuizList()
 })
 
-</script>
- 
-<template>
-<div v-for="(quiz,index) in quizList.questionList" class="p-5">
-    <p>NO : {{index + 1}}</p>
-    <p>Question : {{quiz.question}}</p>
-    <ul>
-        <li><input type="checkbox">{{quiz.a}}</li>
-        <li><input type="checkbox">{{quiz.b}}</li>
-        <li><input type="checkbox">{{quiz.c}}</li>
-        <li><input type="checkbox">{{quiz.d}}</li>
-    </ul>
-</div>
-</template>
- 
-<style>
+const selectQuizType = ref('')
 
-</style>
+const selectCategory = (category) => {
+  selectQuizType.value = category
+  console.log(selectQuizType.value)
+}
+</script>
+
+<template>
+  <QuizTypeSelect
+    :listQuiz="quizList"
+    @selectType="selectCategory"
+  ></QuizTypeSelect>
+</template>
+
+<style></style>

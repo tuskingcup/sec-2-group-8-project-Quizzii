@@ -3,180 +3,122 @@
     {
       "id": 1,
       "title": "Movies",
-      "difficulty": "medium",
       "desc": "Which of these is NOT set in Los Angeles?",
-      "img" : "https://picsum.photos/400/225?random=15",
-      "questionList" : [
-        {
-          "question" : "Which retired American football quarterback played himself in Ace Ventura: Pet Detective and Little Nicky?",
-          "a" : "John Elway",
-          "b" : "Tom Brady",
-          "c" : "Dan Marino",
-          "d" : "Joe Montana",
-          "answer" : "a"
-        },
-        {
-          "question" : "In which 1973 film does Yul Brynner play a robotic cowboy who malfunctions and goes on a killing spree?",
-          "a" : "Runaway",
-          "b" : "Westworld",
-          "c" : "Android",
-          "d" : "The Terminators",
-          "answer" : "b"
-        },
-        {
-          "question" : "Which iconic character is featured in movies such as The Enforcer, Sudden Impact, and The Dead Pool?",
-          "a" : "James Bond",
-          "b" : "Indiana Jones",
-          "c" : "Harry Potter",
-          "d" : "Dirty Harry",
-          "answer" : "d"
-        },
-        {
-          "question" : "In the 1994 movie Speed, what is the minimum speed the bus must go to prevent to bomb from exploding?",
-          "a" : "40 mph",
-          "b" : "50 mph",
-          "c" : "60 mph",
-          "d" : "70 mph",
-          "answer" : "b"
-        },
-        {
-          "question" : "What is the name of the villian in the 2015 Russian-American Sci-Fi Movie Hardcore Henry?",
-          "a" : "Estelle",
-          "b" : "Jimmy",
-          "c" : "Akan",
-          "d" : "Henry",
-          "answer" : "c"
-        },
-        {
-          "question" : "Which one of these actors is said to be cut from the film E.T. the Extra-Terrestrial?",
-          "a" : "Harrison Ford",
-          "b" : "Andy Kaufman",
-          "c" : "Arnold Schwarzenegger",
-          "d" : "Michael J. Fox",
-          "answer" : "a"
-        },
-        {
-          "question" : "What was another suggested name for, the 1985 film, Back to the Future?",
-          "a" : "The Lucky Man",
-          "b" : "Hill Valley Time Travelers",
-          "c" : "The Time Travelers",
-          "d" : "Spaceman From Pluto",
-          "answer" : "d"
-        },
-        {
-          "question" : "In Mulan (1998), who is the leader of the Huns?",
-          "a" : "Fa Zhou",
-          "b" : "Li Shang",
-          "c" : "Chien-Po",
-          "d" : "Shan Yu",
-          "answer" : "d"
-        },
-        {
-          "question" : "In the 2014 film Birdman, what is the primary instrument in the score?",
-          "a" : "Violin",
-          "b" : "Actual Live Birds Singing",
-          "c" : "Drums",
-          "d" : "Saxophone",
-          "answer" : "c"
-        },
-        {
-          "question" : "Who did the score to the original Blade Runner?",
-          "a" : "Vangelis",
-          "b" : "Enya",
-          "c" : "Kitaro",
-          "d" : "Yanni",
-          "answer" : "a"
-        }
-      ]
+      "img": "https://picsum.photos/400/225?random=15"
     },
     {
       "id": 2,
       "title": "Games",
-      "difficulty": "hard",
       "desc": "Which of these is NOT set in Los Angeles?",
-      "img" : "https://picsum.photos/seed/movie/400/225?random=1",
-      "questionList" : [
-        {
-          "question" : "Why was the character Trevor Philips discharged from the Air Force?",
-          "a" : "Danger to Others",
-          "b" : "Injuries",
-          "c" : "Disease",
-          "d" : "Mental Health Issues",
-          "answer" : "d"
-        },
-        {
-          "question" : "How long are all the cutscenes from Metal Gear Solid 4 (PS3, 2008) combined?",
-          "a" : "4 hours",
-          "b" : "5 hours",
-          "c" : "8 hours",
-          "d" : "12 hours",
-          "answer" : "c"
-        },
-        {
-          "question" : "In TF2 Lore, what are the names of the Heavy younger sisters?",
-          "a" : "Yana and Bronislava",
-          "b" : "Yanna and Gaba",
-          "c" : "Gaba and Anna",
-          "d" : "Anna and Bronislava",
-          "answer" : "a"
-        },
-        {
-          "question" : "What do the video games No Man&rsquo;s Sky and Mighty No. 9 have in common?",
-          "a" : "Both were crowdfunded.",
-          "b" : "Both were developed by indie studios.",
-          "c" : "Both were released for the PlayStation 3.",
-          "d" : "Both were announced in 2013.",
-          "answer" : "b"
-        },
-        {
-          "question" : "Gimmick! is a Japanese Famicom game that uses a sound chip expansion in the cartridge. What is it called?",
-          "a" : "VRC7",
-          "b" : "FME-7",
-          "c" : "VRC6",
-          "d" : "VRC7",
-          "answer" : "b"
-        },
-        {
-          "question" : "Which one of these actors is said to be cut from the film E.T. the Extra-Terrestrial?",
-          "a" : "Harrison Ford",
-          "b" : "Andy Kaufman",
-          "c" : "Arnold Schwarzenegger",
-          "d" : "Michael J. Fox",
-          "answer" : "a"
-        },
-        {
-          "question" : "What is the real name of Warhead in the Sega Genesis game Vectorman?",
-          "a" : "Vectorkid",
-          "b" : "Bitmap",
-          "c" : "Raster",
-          "d" : "Peacehead",
-          "answer" : "c"
-        },
-        {
-          "question" : "Strangereal is a fictitious Earth-like world for which game series?",
-          "a" : "Ace Combat",
-          "b" : "Deus Ex",
-          "c" : "Crimson Skies",
-          "d" : "Jet Set Radio",
-          "answer" : "a"
-        },
-        {
-          "question" : "In the Team Fortress 2 canon, what did Shakespearicles NOT invent?",
-          "a" : "Stage Play",
-          "b" : "Rocket Launche",
-          "c" : "Two-Story Building",
-          "d" : "Stairs",
-          "answer" : "d"
-        },
-        {
-          "question" : "In the Nintendo Game Splatoon 2, what is Marina screen name?",
-          "a" : "Vangelis",
-          "b" : "MC.princess",
-          "c" : "DJ_Hyperfresh",
-          "d" : "Kidnotsquid123",
-          "answer" : "c"
-        }
-      ]
+      "img": "https://picsum.photos/seed/movie/400/225?random=1"
+    },
+    {
+      "id": 3,
+      "title": "Sports",
+      "desc": "Which of these is NOT set in Los Angeles?",
+      "img": "https://picsum.photos/seed/movie/400/225?random=1"
+    }
+  ],
+  "Movies": [
+    {
+      "question": "Which retired American football quarterback played himself in Ace Ventura: Pet Detective and Little Nicky?",
+      "A": "John Elway",
+      "B": "Tom Brady",
+      "C": "Dan Marino",
+      "answer": "A",
+      "id": 1
+    },
+    {
+      "question": "In which 1973 film does Yul Brynner play a robotic cowboy who malfunctions and goes on a killing spree?",
+      "A": "Runaway",
+      "B": "Westworld",
+      "C": "Android",
+      "answer": "B",
+      "id": 2
+    },
+    {
+      "question": "Which iconic character is featured in movies such as The Enforcer, Sudden Impact, and The Dead Pool?",
+      "A": "James Bond",
+      "B": "Indiana Jones",
+      "C": "Dirty Harry",
+      "answer": "C",
+      "id": 3
+    },
+    {
+      "question": "What was another suggested name for, the 1985 film, Back to the Future?",
+      "A": "The Lucky Man",
+      "B": "Hill Valley Time Travelers",
+      "C": "Spaceman From Pluto",
+      "answer": "C",
+      "id": 4
+    }
+  ],
+  "Games": [
+    {
+      "question": "Which retired American football quarterback played himself in Ace Ventura: Pet Detective and Little Nicky?",
+      "A": "John Elway",
+      "B": "Tom Brady",
+      "C": "Dan Marino",
+      "answer": "A",
+      "id": 1
+    },
+    {
+      "question": "In which 1973 film does Yul Brynner play a robotic cowboy who malfunctions and goes on a killing spree?",
+      "A": "Runaway",
+      "B": "Westworld",
+      "C": "Android",
+      "answer": "B",
+      "id": 2
+    },
+    {
+      "question": "Which iconic character is featured in movies such as The Enforcer, Sudden Impact, and The Dead Pool?",
+      "A": "James Bond",
+      "B": "Indiana Jones",
+      "C": "Dirty Harry",
+      "answer": "C",
+      "id": 3
+    },
+    {
+      "question": "In the Nintendo Game Splatoon 2, what is Marina screen name?",
+      "A": "Vangelis",
+      "B": "MC.princess",
+      "C": "DJ_Hyperfresh",
+      "answer": "C",
+      "id": 4
+    }
+  ],
+  "Sports": [
+    {
+      "question": "Which retired American football quarterback played himself in Ace Ventura: Pet Detective and Little Nicky?",
+      "A": "John Elway",
+      "B": "Tom Brady",
+      "C": "Dan Marino",
+      "answer": "A",
+      "id": 1
+    },
+    {
+      "question": "In which 1973 film does Yul Brynner play a robotic cowboy who malfunctions and goes on a killing spree?",
+      "A": "Runaway",
+      "B": "Westworld",
+      "C": "Android",
+      "answer": "B",
+      "id": 2
+    },
+    {
+      "question": "Which iconic character is featured in movies such as The Enforcer, Sudden Impact, and The Dead Pool?",
+      "A": "James Bond",
+      "B": "Indiana Jones",
+      "C": "Dirty Harry",
+      "answer": "C",
+      "id": 3
+    },
+    {
+      "question": "In the Nintendo Game Splatoon 2, what is Marina screen name?",
+      "A": "Vangelis",
+      "B": "MC.princess",
+      "C": "DJ_Hyperfresh",
+      "answer": "C",
+      "id": 4
     }
   ]
 }

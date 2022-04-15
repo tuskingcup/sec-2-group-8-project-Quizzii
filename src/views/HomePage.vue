@@ -1,10 +1,17 @@
 <script setup>
+import {ref} from 'vue'
+
 fetch('https://opentdb.com/api.php?amount=10&category=11&difficulty=medium&type=multiple')
 .then((res) => res.json())
 .then((data) => console.log(data))
 
 // fetch('http://localhost:5000')
 // .then((res) => console.log(res))
+
+const onBar = ref([
+  {id:1 , status: true}
+])
+
 </script>
  
 <template>
@@ -24,7 +31,7 @@ fetch('https://opentdb.com/api.php?amount=10&category=11&difficulty=medium&type=
     <p>quiz</p>
   </div>
   <div class="absolute cursor-pointer mt-36 tracking-[.75em]">
-    <router-link :to="{name : 'QuizList'}" class="animate-pulse hover:text-lg">start</router-link>
+    <router-link :to="{name : 'QuizList',params:{id: onBar.id,status: onBar.status}}" class="animate-pulse hover:text-lg">start</router-link>
   </div>
 </div>
 </template>
