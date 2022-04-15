@@ -1,20 +1,124 @@
 {
-    "notes": [
-      {
-        "id": 1,
-        "noteDetail": "Grading Exam"
-      },
-      {
-        "id": 2,
-        "noteDetail": "Visit Granpa"
-      },
-      {
-        "id": 3,
-        "noteDetail": "Go to Shopping"
-      },
-      {
-        "noteDetail": "Hello",
-        "id": 4
-      }
-    ]
-  }
+  "quizList": [
+    {
+      "id": 1,
+      "title": "Movies",
+      "desc": "Which of these is NOT set in Los Angeles?",
+      "img": "https://picsum.photos/400/225?random=15"
+    },
+    {
+      "id": 2,
+      "title": "Games",
+      "desc": "Which of these is NOT set in Los Angeles?",
+      "img": "https://picsum.photos/seed/movie/400/225?random=1"
+    },
+    {
+      "id": 3,
+      "title": "Sports",
+      "desc": "Which of these is NOT set in Los Angeles?",
+      "img": "https://picsum.photos/seed/movie/400/225?random=1"
+    }
+  ],
+  "Movies": [
+    {
+      "question": "Which retired American football quarterback played himself in Ace Ventura: Pet Detective and Little Nicky?",
+      "A": "John Elway",
+      "B": "Tom Brady",
+      "C": "Dan Marino",
+      "answer": "A",
+      "id": 1
+    },
+    {
+      "question": "In which 1973 film does Yul Brynner play a robotic cowboy who malfunctions and goes on a killing spree?",
+      "A": "Runaway",
+      "B": "Westworld",
+      "C": "Android",
+      "answer": "B",
+      "id": 2
+    },
+    {
+      "question": "Which iconic character is featured in movies such as The Enforcer, Sudden Impact, and The Dead Pool?",
+      "A": "James Bond",
+      "B": "Indiana Jones",
+      "C": "Dirty Harry",
+      "answer": "C",
+      "id": 3
+    },
+    {
+      "question": "What was another suggested name for, the 1985 film, Back to the Future?",
+      "A": "The Lucky Man",
+      "B": "Hill Valley Time Travelers",
+      "C": "Spaceman From Pluto",
+      "answer": "C",
+      "id": 4
+    }
+  ],
+  "Games": [
+    {
+      "question": "Which retired American football quarterback played himself in Ace Ventura: Pet Detective and Little Nicky?",
+      "A": "John Elway",
+      "B": "Tom Brady",
+      "C": "Dan Marino",
+      "answer": "A",
+      "id": 1
+    },
+    {
+      "question": "In which 1973 film does Yul Brynner play a robotic cowboy who malfunctions and goes on a killing spree?",
+      "A": "Runaway",
+      "B": "Westworld",
+      "C": "Android",
+      "answer": "B",
+      "id": 2
+    },
+    {
+      "question": "Which iconic character is featured in movies such as The Enforcer, Sudden Impact, and The Dead Pool?",
+      "A": "James Bond",
+      "B": "Indiana Jones",
+      "C": "Dirty Harry",
+      "answer": "C",
+      "id": 3
+    },
+    {
+      "question": "In the Nintendo Game Splatoon 2, what is Marina screen name?",
+      "A": "Vangelis",
+      "B": "MC.princess",
+      "C": "DJ_Hyperfresh",
+      "answer": "C",
+      "id": 4
+    }
+  ],
+  "Sports": [
+    {
+      "question": "Which retired American football quarterback played himself in Ace Ventura: Pet Detective and Little Nicky?",
+      "A": "John Elway",
+      "B": "Tom Brady",
+      "C": "Dan Marino",
+      "answer": "A",
+      "id": 1
+    },
+    {
+      "question": "In which 1973 film does Yul Brynner play a robotic cowboy who malfunctions and goes on a killing spree?",
+      "A": "Runaway",
+      "B": "Westworld",
+      "C": "Android",
+      "answer": "B",
+      "id": 2
+    },
+    {
+      "question": "Which iconic character is featured in movies such as The Enforcer, Sudden Impact, and The Dead Pool?",
+      "A": "James Bond",
+      "B": "Indiana Jones",
+      "C": "Dirty Harry",
+      "answer": "C",
+      "id": 3
+    },
+    {
+      "question": "In the Nintendo Game Splatoon 2, what is Marina screen name?",
+      "A": "Vangelis",
+      "B": "MC.princess",
+      "C": "DJ_Hyperfresh",
+      "answer": "C",
+      "id": 4
+    }
+  ]
+}

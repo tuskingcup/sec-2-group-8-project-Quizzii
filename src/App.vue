@@ -1,18 +1,16 @@
 <script setup>
+import {useRoute} from 'vue-router'
+
+const {params} = useRoute()
+console.log(params.status)
 
 </script>
  
 <template>
- <div>
-  <div>
-    <router-link :to="{ name: 'Home'}">Home</router-link> |
-  </div>
-  <div>
-    <router-view></router-view>
-  </div>
-</div>
+
+<router-view> </router-view>
 </template>
  
-<style scoped>
+<style>
 
 </style>
