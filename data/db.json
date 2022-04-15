@@ -10,13 +10,25 @@
       "id": 2,
       "title": "Games",
       "desc": "Which of these is NOT set in Los Angeles?",
-      "img": "https://picsum.photos/seed/movie/400/225?random=1"
+      "img": "https://picsum.photos/400/225?random=1"
     },
     {
       "id": 3,
       "title": "Sports",
       "desc": "Which of these is NOT set in Los Angeles?",
-      "img": "https://picsum.photos/seed/movie/400/225?random=1"
+      "img": "https://picsum.photos/400/225?random=2"
+    },
+    {
+      "id": 4,
+      "title": "Books",
+      "desc": "Which of these is NOT set in Los Angeles?",
+      "img": "https://picsum.photos/400/225?random=3"
+    },
+    {
+      "id": 5,
+      "title": "Animals",
+      "desc": "Which of these is NOT set in Los Angeles?",
+      "img": "https://picsum.photos/400/225?random=4"
     }
   ],
   "Movies": [
@@ -119,6 +131,90 @@
       "C": "DJ_Hyperfresh",
       "answer": "C",
       "id": 4
+    }
+  ],
+  "Books": [
+    {
+      "question": "In the  Rossini opera, what was the name of &#039;The Barber of Seville?",
+      "A": "Fernando",
+      "B": "Figaro",
+      "C": "Angelo",
+      "answer": "B",
+      "id": 1
+    },
+    {
+      "question": "Who is the frontman of the band 30 Seconds to Mars?",
+      "A": "Jared Leto",
+      "B": "Matthew Bellamy",
+      "C": "Gerard Way",
+      "answer": "A",
+      "id": 2
+    },
+    {
+      "question": "Which member of the Foo Fighters was previously the drummer for Nirvana?",
+      "A": "Chris Shiflett",
+      "B": "Taylor Hawkins",
+      "C": "Dave Grohl",
+      "answer": "C",
+      "id": 3
+    },
+    {
+      "question": "Which country does the band Rammstein hail from?",
+      "A": "Austria",
+      "B": "Armenia",
+      "C": "Germany",
+      "answer": "C",
+      "id": 4
+    }
+  ],
+  "Animals": [
+    {
+      "question": "What type of animal is a natterjack?",
+      "A": "Fish",
+      "B": "Toad",
+      "C": "Bird",
+      "answer": "B",
+      "id": 1
+    },
+    {
+      "question": "What is the scientific name for the Polar Bear?",
+      "A": "Ursus Arctos",
+      "B": "Ursus Spelaeus",
+      "C": "Ursus Maritimus",
+      "answer": "C",
+      "id": 2
+    },
+    {
+      "question": "Which animal was part of an Russian domestication experiment in 1959?",
+      "A": "Foxes",
+      "B": "Pigeons",
+      "C": "Alligators",
+      "answer": "A",
+      "id": 3
+    },
+    {
+      "question": "What dog bread is one of the oldest breeds of dog and has flourished since before 400 BCE.",
+      "A": "Pugs",
+      "B": "Chihuahua",
+      "C": "Boxers",
+      "answer": "A",
+      "id": 4
+    },
+    {
+      "question": "What is the fastest animal?",
+      "A": "Cheetah",
+      "B": "Golden Eagle",
+      "C": "Peregrine Falcon",
+      "answer": "C",
+      "id": 5
+    },
+    {
+      "question": "What is the name for a male bee that comes from an unfertilized egg?",
+      "A": "Soldier",
+      "B": "Drone",
+      "C": "Worker",
+      "answer": "B",
+      "id": 6
     }
   ]
 }

@@ -66,7 +66,7 @@ const createQuiz = async (question, A, B, C, answer) => {
       A: A,
       B: B,
       C: C,
-      answer: answer
+      answer: answer.toUpperCase()
     })
   })
   if (res.status === 201) {
@@ -94,7 +94,7 @@ const modifyMode = async (edit) => {
       A: edit.A,
       B: edit.B,
       C: edit.C,
-      answer: edit.answer
+      answer: edit.answer.toUpperCase()
     })
   })
   if (res.status === 200) {
