@@ -1,13 +1,6 @@
 <script setup>
 import {ref} from 'vue'
 
-fetch('https://opentdb.com/api.php?amount=10&category=11&difficulty=medium&type=multiple')
-.then((res) => res.json())
-.then((data) => console.log(data))
-
-// fetch('http://localhost:5000')
-// .then((res) => console.log(res))
-
 const onBar = ref([
   {id:1 , status: true}
 ])
