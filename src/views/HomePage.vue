@@ -1,9 +1,9 @@
 <script setup>
 import {ref} from 'vue'
 
-const onBar = ref([
+const onBar = ref(
   {id:1 , status: true}
-])
+)
 
 </script>
  

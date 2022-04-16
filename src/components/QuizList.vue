@@ -1,17 +1,23 @@
 <script setup>
 import { ref,onBeforeMount } from 'vue'
+import {useRoute} from 'vue-router'
+import router from '../router';
+
 defineEmits(['URL'])
-const quizLists = ref([])
-const URL = 'http://localhost:5000/quizList'
 
-const getList = async() => {
-  const res = await fetch(URL)
-  quizLists.value = await res.json()
-}
+defineProps({
+    quizLists:{
+        type: Array,
+        require: true
+    },
+    status:{
+        type: String,
+        require: true
+    }
 
-onBeforeMount(async()=>{
-  await getList()
 })
+
+
 </script>
 
 <template>
@@ -27,11 +33,18 @@ onBeforeMount(async()=>{
       <div class="card-body">
         <h2 class="card-title">{{quizList.title}}</h2>
         <p>{{quizList.desc}}</p>
-        <div class="card-actions justify-between uppercase">
+        <div class="card-actions justify-between uppercase" v-show="status == 'play'">
           <router-link :to="{name : 'Quiz',params:{id : quizList.id, title : quizList.title}}">
           <button class="btn btn-primary">Let's Quiz</button>
           </router-link>
         </div>
+
+         <div class="card-actions justify-between uppercase" v-show="status == 'manage'" >
+          <router-link :to="{name : 'Manage',params:{id : quizList.id, title : quizList.title}}">
+          <button class="btn btn-primary">Manage</button>
+          </router-link>
+        </div>
+
       </div>
     </div>
   </div>

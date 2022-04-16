@@ -5,6 +5,7 @@ import Quiz from '../views/QuizGame.vue'
 import ManageList from '../views/QuizPageManage.vue'
 import Manage from '../views/QuizManage.vue'
 
+
 const history = createWebHistory();
 const routes = [
     {
@@ -13,7 +14,7 @@ const routes = [
         component: Home
     },
     {
-        path : '/quiz-list-page',
+        path : '/quiz-list-page/',
         name: 'QuizList',
         component: QuizList
     },
@@ -23,9 +24,9 @@ const routes = [
         component: Quiz,
     },
     {
-        path : '/manage-list-page',
+        path : '/manage-list-page/',
         name: 'ManageList',
-        component: ManageList
+        component: QuizList
     },
     {
         path : '/manage-list-page/:title',

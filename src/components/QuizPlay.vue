@@ -6,7 +6,7 @@ defineProps({
         require: true
     },
     getCurrentQuiz :{
-        type: Array,
+        type: Object,
         require: true
     },
     complete:{
@@ -59,7 +59,7 @@ defineProps({
     <section v-else>
         <h2> You have finished the quiz! </h2>
         <p>Your score : {{ score }}/{{ Quiz.length }}</p>
-        <button @click="$emit('goBack')">Back</button> 
+        <button @click="$emit('goBack')" class="mt-5">Back</button> 
     </section>
   </div>
 

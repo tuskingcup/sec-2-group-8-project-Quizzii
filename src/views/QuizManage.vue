@@ -6,7 +6,7 @@ import { onBeforeMount, ref } from 'vue'
 
 const { params } = useRoute()
 const myrouter = useRouter()
-const goBack = () => myrouter.push({ name: 'ManageList' })
+const goBack = () => myrouter.push({ name: 'ManageList', params: { status : 'manage' }  })
 
 const quizList = ref([])
 console.log(params.title)
