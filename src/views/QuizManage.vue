@@ -111,8 +111,8 @@ const modifyMode = async (edit) => {
   <div class="relative my-3">
     <div class="flex items-center justify-between flex-wrap p-3">
       <div class="text-sm lg:flex-grow space-x-5">
-      <button class="py-3 px-6 border rounded-xl" @click="goBack">Back</button>
-      <button class="py-3 px-6 border rounded-xl" @click="showForm" :disabled="onForm">Create Quiz</button>
+      <button class="btn btn-outline rounded-xl" @click="goBack">Back</button>
+      <button class="btn btn-outline btn-success rounded-xl" @click="showForm" :disabled="onForm">Create Quiz</button>
       </div>
     </div>
       <span v-show="onForm">
