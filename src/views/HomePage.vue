@@ -21,7 +21,7 @@ const onBar = ref(
 </div>
 <div class="flex items-center justify-center h-screen uppercase">
   <div class="text-6xl font-[500] tracking-[1em]">
-    <p>quiz</p>
+    <p>quizzi</p>
   </div>
   <div class="absolute cursor-pointer mt-36 tracking-[.75em]">
     <router-link :to="{name : 'QuizList', params:{status: onBar.status}}" class="animate-pulse hover:text-lg">start</router-link>
