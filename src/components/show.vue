@@ -17,7 +17,7 @@ defineProps({
           <p>Question : {{ quiz.question }}</p>
           <div class="text-base-300 mt-5 justify-evenly">
           <button class="bg-amber-400 px-5 rounded-xl hover:scale-110" @click="$emit('editNote', quiz)">Edit</button> &nbsp;
-          <button class="border px-5 rounded-xl text-red-400 hover:scale-110 hover:bg-base-200" v-show="quiz.id >= 4" @click="$emit('deleteNote', quiz.id, quiz.question)">
+          <button class="border px-5 rounded-xl text-white hover:scale-110 hover:bg-base-200" v-show="quiz.id >= 4" @click="$emit('deleteNote', quiz.id, quiz.question)">
             Delete
           </button>
           </div>

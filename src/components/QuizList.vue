@@ -1,16 +1,9 @@
 <script setup>
-import { ref,onBeforeMount } from 'vue'
-defineEmits(['URL'])
-const quizLists = ref([])
-const URL = 'http://localhost:5000/quizList'
-
-const getList = async() => {
-  const res = await fetch(URL)
-  quizLists.value = await res.json()
-}
-
-onBeforeMount(async()=>{
-  await getList()
+defineProps({
+  quizLists : {
+    type : Object,
+    require : true
+  }
 })
 </script>
 

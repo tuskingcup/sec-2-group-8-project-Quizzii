@@ -27,7 +27,7 @@ const newQuiz = computed(() => {
   <div class="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 md:h-full">
     <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
       <!-- content -->
-      <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
+      <div class="fixed inset-0 bg-gray-400 bg-opacity-50"></div>
       <div class="relative mx-auto my-auto translate-x-2/4 rounded-lg shadow dark:bg-gray-700">
         <!-- header -->
         <div class="flex justify-between items-start p-5 rounded-t border-b dark:border-gray-600">
@@ -50,7 +50,7 @@ const newQuiz = computed(() => {
           <form>
             <div class="p-2 border-[0.75px] border-white rounded-xl">
               <h1 class="text-center my-3">Question</h1>
-              <textarea class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:ring" rows="3"
+              <textarea class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:ring focus:ring-amber-400/75" rows="3"
                 placeholder="Ex: 1 + 1 = ?" v-model="newQuiz.question"></textarea>
             </div>
 
@@ -59,17 +59,17 @@ const newQuiz = computed(() => {
                 <div class="my-3">
                   <p>Choice A</p>
                   <input type="text" v-model="newQuiz.A" placeholder="Ex: 5"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                </div>
-                <div class="my-3">
-                  <p>Choice B</p>
-                  <input type="text" v-model="newQuiz.B" placeholder="Ex: 2"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
-                </div>
-                <div class="my-3">
-                  <p>Choice C</p>
-                  <input type="text" v-model="newQuiz.C" placeholder="Ex: 3"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                    class="text-gray-900 text-sm rounded-lg block w-full p-2.5" />
+                </div> 
+                <div class="my-3"> 
+                  <p>Choice B</p> 
+                  <input type="text" v-model="newQuiz.B" placeholder="Ex: 2" 
+                    class="text-gray-900 text-sm rounded-lg block w-full p-2.5" />
+                </div> 
+                <div class="my-3"> 
+                  <p>Choice C</p> 
+                  <input type="text" v-model="newQuiz.C" placeholder="Ex: 3" 
+                    class="text-gray-900 text-sm rounded-lg block w-full p-2.5" />
                 </div>
               </div>
             </div>
@@ -86,10 +86,10 @@ const newQuiz = computed(() => {
         </div>
         <!-- Modal footer -->
         <div class="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">
-          <button v-if="newQuiz.id !== undefined" type="reset" @click="$emit('editQuiz', newQuiz)">
+          <button class="btn btn-outline" v-if="newQuiz.id !== undefined" type="reset" @click="$emit('editQuiz', newQuiz)">
             Save
           </button>
-          <button v-else type="reset" @click="
+          <button class="btn btn-outline" v-else type="reset" @click="
             $emit(
               'createQuiz',
               newQuiz.question,
@@ -101,7 +101,6 @@ const newQuiz = computed(() => {
           ">
             Create
           </button>
-          &nbsp;
         </div>
       </div>
     </div>
