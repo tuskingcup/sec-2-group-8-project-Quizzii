@@ -20,17 +20,10 @@ const status = computed(() => route.params.status
   
 )
 
-const Filter = async(text)=>{
-  console.log(text)
-  const textFilter = text.toLocaleUpperCase()
-  const res = await fetch(URL)
-  const data = await res.json()
-  if(res.status){
-    console.log(textFilter)
-    quizLists.value = data.filter((e) => e.title.toLocaleUpperCase().includes(textFilter))
-    console.log(quizLists.value)
-    return quizLists.value
-  }
+
+function getFilter (filter) {
+  console.log(filter)
+  quizLists.value = filter
 }
 
 
@@ -38,7 +31,7 @@ const Filter = async(text)=>{
 
 <template>
   <bar></bar>
-  <Search :quizLists="quizLists" @filter="Filter"></Search>
+  <Search :quizLists="quizLists" @filter="getFilter"></Search>
   <QuizList :status="status" :quizLists = "quizLists" ></QuizList>
 </template>
 
