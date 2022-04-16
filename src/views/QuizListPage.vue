@@ -18,7 +18,10 @@ onBeforeMount(async()=>{
 
 const route = useRoute()
 
-const status = computed(() => route.params.status)
+const status = computed(() => route.params.status 
+
+  
+)
 
 const myrouter = useRouter()
 

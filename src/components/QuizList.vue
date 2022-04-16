@@ -11,7 +11,7 @@ defineProps({
         require: true
     },
     status:{
-        type: String,
+        type: String,   
     }
 
 })
@@ -32,7 +32,7 @@ defineProps({
       <div class="card-body">
         <h2 class="card-title">{{quizList.title}}</h2>
         <p>{{quizList.desc}}</p>
-        <div class="card-actions justify-between uppercase" v-show="status == 'play' || status == undefined">
+        <div class="card-actions justify-between uppercase" v-show="status == 'play'">
           <router-link :to="{name : 'Quiz',params:{id : quizList.id, title : quizList.title}}">
           <button class="btn btn-primary">Let's Quiz</button>
           </router-link>

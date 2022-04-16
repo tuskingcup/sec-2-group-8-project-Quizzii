@@ -2,7 +2,7 @@
 import {ref} from 'vue'
 
 const onBar = ref(
-  {id:1 , status: true}
+  {status: 'play'}
 )
 
 </script>
@@ -24,7 +24,7 @@ const onBar = ref(
     <p>quiz</p>
   </div>
   <div class="absolute cursor-pointer mt-36 tracking-[.75em]">
-    <router-link :to="{name : 'QuizList',params:{id: onBar.id,status: onBar.status}}" class="animate-pulse hover:text-lg">start</router-link>
+    <router-link :to="{name : 'QuizList', params:{status: onBar.status}}" class="animate-pulse hover:text-lg">start</router-link>
   </div>
 </div>
 </template>

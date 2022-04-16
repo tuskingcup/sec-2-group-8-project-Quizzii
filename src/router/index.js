@@ -2,7 +2,6 @@ import {createRouter,createWebHistory} from 'vue-router'
 import Home from '../views/HomePage.vue'
 import QuizList from '../views/QuizListPage.vue'
 import Quiz from '../views/QuizGame.vue'
-import ManageList from '../views/QuizPageManage.vue'
 import Manage from '../views/QuizManage.vue'
 
 
@@ -14,7 +13,7 @@ const routes = [
         component: Home
     },
     {
-        path : '/quiz-list-page/',
+        path : '/quiz-list-page/:status',
         name: 'QuizList',
         component: QuizList
     },
