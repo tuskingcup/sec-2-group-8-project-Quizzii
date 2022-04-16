@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import { ref,onBeforeMount } from 'vue'
 import bar from '../components/Bar.vue'
 defineEmits(['URL'])
@@ -39,4 +39,4 @@ onBeforeMount(async()=>{
 
 </template>
 
-<style></style>
+<style></style> -->

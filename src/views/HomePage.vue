@@ -1,34 +1,31 @@
 <script setup>
 import {ref} from 'vue'
-
-const onBar = ref([
-  {id:1 , status: true}
-])
-
+const onBar = ref(
+  {status: 'play'}
+)
 </script>
  
 <template>
-<div class="flex w-full h-full">
-  <span class="animate-ping-fast absolute inline-flex rounded-full h-12 w-12 md:inset-y-[23rem] md:left-[12rem] bg-sky-500"></span>
-  <span class="animate-ping-fast absolute inline-flex rounded-full h-5 w-5 md:inset-y-[17rem] md:left-[49rem] bg-sky-300"></span>
-  <span class="animate-ping-fast absolute inline-flex rounded-full h-3 w-3  md:inset-y-[10rem] md:left-[6rem] bg-sky-400"></span>
-  <span class="animate-ping-slow absolute inline-flex rounded-full h-10 w-10 md:inset-y-[36rem] md:left-[64rem] bg-sky-500"></span>
-  <span class="animate-ping-slow absolute inline-flex rounded-full h-14 w-14 md:inset-y-[2rem] md:left-[24rem] bg-sky-500"></span>
-  <span class="animate-ping-slow absolute inline-flex rounded-full h-6 w-6  md:inset-y-[38rem] md:left-[6rem] bg-sky-500"></span>
-  <span class="animate-ping-moderato absolute inline-flex rounded-full h-3 w-3 md:inset-y-[8rem] md:left-[80rem] bg-sky-500"></span>
-  <span class="animate-ping-moderato absolute inline-flex rounded-full h-3 w-3 md:inset-y-[14rem] md:left-[35rem] bg-sky-500"></span>
-  <span class="animate-ping-moderato absolute inline-flex rounded-full h-3 w-3 md:inset-y-[1rem] md:left-[8rem] bg-sky-500"></span>
+<div class="md:absolute">
+  <span class="animate-ping-fast relative inline-flex rounded-full h-12 w-12 md:inset-y-[23rem] md:left-[12rem] bg-sky-500"></span>
+  <span class="animate-ping-fast relative inline-flex rounded-full h-5 w-5 md:inset-y-[17rem] md:left-[49rem] bg-sky-300"></span>
+  <span class="animate-ping-fast relative inline-flex rounded-full h-3 w-3  md:inset-y-[10rem] md:left-[6rem] bg-sky-400"></span>
+  <span class="animate-ping-slow relative inline-flex rounded-full h-10 w-10 md:inset-y-[36rem] md:left-[64rem] bg-sky-500"></span>
+  <span class="animate-ping-slow relative inline-flex rounded-full h-14 w-14 md:inset-y-[2rem] md:left-[24rem] bg-sky-500"></span>
+  <span class="animate-ping-slow relative inline-flex rounded-full h-6 w-6  md:inset-y-[38rem] md:left-[6rem] bg-sky-500"></span>
+  <span class="animate-ping-moderato relative inline-flex rounded-full h-3 w-3 md:inset-y-[8rem] md:left-[64rem] bg-sky-500"></span>
+  <span class="animate-ping-moderato relative inline-flex rounded-full h-3 w-3 md:inset-y-[14rem] md:left-[35rem] bg-sky-500"></span>
+  <span class="animate-ping-moderato relative inline-flex rounded-full h-3 w-3 md:inset-y-[1rem] md:left-[8rem] bg-sky-500"></span>
 </div>
-<div class="flex items-center justify-center h-screen w-screen uppercase">
+<div class="flex items-center justify-center h-screen uppercase">
   <div class="text-6xl font-[500] tracking-[1em]">
-    <p>quiz</p>
+    <p>quizzi</p>
   </div>
   <div class="absolute cursor-pointer mt-36 tracking-[.75em]">
-    <router-link :to="{name : 'QuizList',params:{id: onBar.id,status: onBar.status}}" class="animate-pulse hover:text-lg">start</router-link>
+    <router-link :to="{name : 'QuizList', params:{status: onBar.status}}" class="animate-pulse hover:text-lg">start</router-link>
   </div>
 </div>
 </template>
  
 <style>
-
 </style>

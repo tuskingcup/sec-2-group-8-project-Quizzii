@@ -3,25 +3,19 @@ import Form from '../components/form.vue'
 import Show from '../components/show.vue'
 import { useRoute, useRouter } from 'vue-router'
 import { onBeforeMount, ref } from 'vue'
-
 const { params } = useRoute()
 const myrouter = useRouter()
-const goBack = () => myrouter.push({ name: 'ManageList' })
-
+const goBack = () => myrouter.push({ name: 'ManageList', params: { status : 'manage' }  })
 const quizList = ref([])
 console.log(params.title)
-
 const getQuiz = async () => {
   const res = await fetch(`http://localhost:5000/${params.title}`)
   quizList.value = await res.json()
 }
-
 onBeforeMount(async () => {
   await getQuiz()
 })
-
 //-----On-Off---From----
-
 const onForm = ref(false)
 const showForm = () => {
   if (onForm.value === false) {
@@ -31,7 +25,6 @@ const showForm = () => {
   }
   editingNote.value = {}
 }
-
 //DELETE
 const removeQuiz = async (removeNoteid) => {
   const res = await fetch(
@@ -45,7 +38,6 @@ const removeQuiz = async (removeNoteid) => {
     quizList.value = quizList.value.filter((note) => note.id !== removeNoteid)
   } else console.log('error, cannot delete note')
 }
-
 const popUp = (id, quiz) => {
   if (
     confirm(`Do you want to delete this quiz? \n Id : ${id} \n Quiz : ${quiz}`)
@@ -55,7 +47,6 @@ const popUp = (id, quiz) => {
     console.log('cancel delete')
   }
 }
-
 //CREATE
 const createQuiz = async (question, A, B, C, answer) => {
   const res = await fetch(`http://localhost:5000/${params.title}`, {
@@ -76,7 +67,6 @@ const createQuiz = async (question, A, B, C, answer) => {
   } else console.log('error, cannot create note')
   editingNote.value = {}
 }
-
 //EDIT
 const editingNote = ref({})
 const editMode = async (editNote) => {
@@ -121,8 +111,8 @@ const modifyMode = async (edit) => {
   <div class="relative my-3">
     <div class="flex items-center justify-between flex-wrap p-3">
       <div class="text-sm lg:flex-grow space-x-5">
-      <button class="btn btn-outline py-3 px-6 rounded-xl" @click="goBack">Back</button>
-      <button class="btn btn-outline btn-success py-3 px-6 rounded-xl" @click="showForm" :disabled="onForm">Create Quiz</button>
+      <button class="py-3 px-6 border rounded-xl" @click="goBack">Back</button>
+      <button class="py-3 px-6 border rounded-xl" @click="showForm" :disabled="onForm">Create Quiz</button>
       </div>
     </div>
       <span v-show="onForm">

@@ -1,10 +1,11 @@
-<script setup></script>
+<script setup>
+</script>
 
 <template>
   <div class="flex items-center justify-between flex-wrap bg-base-300 p-3">
     <div class="text-sm lg:flex-grow space-x-5">
-      <router-link :to="{ name: 'QuizList' }" class="hover:text-amber-400">Home</router-link>
-      <router-link :to="{ name: 'ManageList' }" class="hover:text-amber-400">Manage</router-link>
+      <router-link :to="{ name: 'QuizList', params: { status : 'play' } }" class="hover:text-amber-400">Home</router-link>
+      <router-link :to="{ name: 'QuizList', params: { status : 'manage' } }" class="hover:text-amber-400">Manage</router-link>
     </div>
   </div>
 </template>

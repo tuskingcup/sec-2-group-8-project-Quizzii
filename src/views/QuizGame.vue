@@ -1,38 +1,10 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@Runlertjit 
-tuskingcup
-/
-sec-2-group-8-project-zonetoon
-Private
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-sec-2-group-8-project-zonetoon/src/views/QuizGame.vue
-
-Wasin 1.2.5.3
-Latest commit f4df5e6 11 hours ago
- History
- 0 contributors
-151 lines (125 sloc)  3.3 KB
-   
 <script setup>
 import { useRoute,useRouter } from 'vue-router'
 import { ref, onBeforeMount,computed,reactive } from 'vue'
-import play from '../components/QuizPlay.vue'
+import Quizplay from '../components/QuizPlay.vue'
 const {params} = useRoute()
 const myrouter = useRouter();
-const goBack = () => myrouter.push({ name: "QuizList" });
+const goBack = () => myrouter.push({ name: "QuizList" , params: { status : 'play' } });
 const quizList = ref([])
 console.log(params.title)
 const getQuiz = async(param) => {
@@ -51,29 +23,29 @@ const startQuiz = () => {
   start.value = true
   console.log(question)
 };
-let array = ref([]);
+let randomQuestion = ref([]);
 const randomNum = () => {
 //----------randomQuiz--------
-if(array.value.length < 3){
+if(randomQuestion.value.length < 3){
   do {
     let num = Math.floor(Math.random() * quizList.value.length);
-    if (!array.value.includes(num)) {
-      array.value.push(num);
+    if (!randomQuestion.value.includes(num)) {
+      randomQuestion.value.push(num);
     }
-  } while (array.value.length <= 2);}
-  return array.value;
+  } while (randomQuestion.value.length <= 2);}
+  return randomQuestion.value;
 };
 //----------Create question---------
 const createQuiz = () =>{
     question.value = []
-    for(let x in array.value){ 
+    for(let x in randomQuestion.value){ 
         question.value.push({
-            question:quizList.value[array.value[x]].question,
-            answer:answerCheck(quizList.value[array.value[x]].answer),
+            question:quizList.value[randomQuestion.value[x]].question,
+            answer:answerCheck(quizList.value[randomQuestion.value[x]].answer),
             option:[
-                quizList.value[array.value[x]].A,
-                quizList.value[array.value[x]].B,
-                quizList.value[array.value[x]].C
+                quizList.value[randomQuestion.value[x]].A,
+                quizList.value[randomQuestion.value[x]].B,
+                quizList.value[randomQuestion.value[x]].C
             ],
             select: null
         })
@@ -99,6 +71,7 @@ const answerCheck = (ans) => {
 const quizComplete = ref(false)
 const currentQuiz = ref(0)
 let score = ref(0)
+
 const scoreCal = computed(() => {
     let value = 0
     if(num.value === 1){
@@ -116,7 +89,7 @@ const getCurrentQuiz = computed(() => {
     quest.index = currentQuiz.value
     return quest
 })
-const getAnswer = event =>{
+const getAnswer = event => {
     question.value[currentQuiz.value].select = event.target.value
      event.target.value = null
 }
@@ -142,7 +115,7 @@ const nextQuest = () => {
   </div>
   
   <div v-show="start" >
-    <play   :Quiz="question" 
+    <Quizplay   :Quiz="question" 
             :getCurrentQuiz="getCurrentQuiz" 
             :complete="quizComplete" 
             :score="score" 
