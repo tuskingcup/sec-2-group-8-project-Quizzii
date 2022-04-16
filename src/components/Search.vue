@@ -20,12 +20,12 @@ const Filter = async(text)=>{
 </script>
  
 <template>
-<div class="flex justify-center">
-  <div class="mb-3 xl:w-96">
+<div class="flex justify-end">
+  <div class="mx-10 mt-5 xl:w-72">
     <input
       @input="Filter"
       @keyup="$emit('filter',quizLists)"
-      type="search"
+      type="input"
       class="
         form-control
         block
@@ -41,41 +41,13 @@ const Filter = async(text)=>{
         transition
         ease-in-out
         m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+        focus:text-gray-700 focus:bg-white focus:ring focus:ring-amber-600 focus:outline-none
       "
       id="exampleSearch2"
       placeholder="Type query"
     />
   </div>
 </div>
-<!-- <div class="flex justify-center">
-  <div class="mb-3 xl:w-96">
-    <input
-      v-model="textFilter"
-      @keyup="$emit('filter',textFilter)"
-      type="search"
-      class="
-        form-control
-        block
-        w-full
-        px-3
-        py-1.5
-        text-base
-        font-normal
-        text-gray-700
-        bg-white bg-clip-padding
-        border border-solid border-gray-300
-        rounded
-        transition
-        ease-in-out
-        m-0
-        focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
-      "
-      id="exampleSearch2"
-      placeholder="Type query"
-    />
-  </div>
-</div> -->
 </template>
  
 <style>
