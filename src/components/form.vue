@@ -77,8 +77,15 @@ const newQuiz = computed(() => {
               <div class="mx-3">
                 <div class="my-3">
                   <p>Answer</p>
-                  <input type="text" v-model="newQuiz.answer" placeholder="Ex: A"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                  <!-- <input type="text" v-model="newQuiz.answer" placeholder="Ex: A"
+                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" /> -->
+                
+                <select v-model="newQuiz.answer">
+                  <option value="">Please select one</option>
+                  <option value="A">A</option>
+                   <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
                 </div>
               </div>
             </div>

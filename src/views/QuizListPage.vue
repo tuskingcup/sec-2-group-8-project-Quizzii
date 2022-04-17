@@ -1,36 +1,29 @@
 <script setup>
 import bar from '../components/Bar.vue'
 import QuizList from '../components/QuizList.vue'
-import {ref, onMounted,onBeforeMount, computed} from 'vue'
-import { useRoute,useRouter } from 'vue-router'
+import { ref, onBeforeMount, computed } from 'vue'
+import { useRoute } from 'vue-router'
 
 const quizLists = ref([])
 const URL = 'http://localhost:5000/quizList'
 
-const getList = async() => {
+const getList = async () => {
   const res = await fetch(URL)
   quizLists.value = await res.json()
 }
 
-onBeforeMount(async()=>{
+onBeforeMount(async () => {
   await getList()
 })
 
 const route = useRoute()
 
-const status = computed(() => route.params.status 
-
-  
-)
-
-const myrouter = useRouter()
-
-
+const status = computed(() => route.params.status)
 </script>
 
 <template>
   <bar></bar>
-  <QuizList :status="status" :quizLists = "quizLists" ></QuizList>
+  <QuizList :status="status" :quizLists="quizLists"></QuizList>
 </template>
 
 <style></style>

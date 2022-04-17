@@ -6,7 +6,7 @@ import { onBeforeMount, ref } from 'vue'
 
 const { params } = useRoute()
 const myrouter = useRouter()
-const goBack = () => myrouter.push({ name: 'ManageList', params: { status : 'manage' }  })
+const goBack = () => myrouter.go(-1)
 
 const quizList = ref([])
 console.log(params.title)
@@ -33,16 +33,16 @@ const showForm = () => {
 }
 
 //DELETE
-const removeQuiz = async (removeNoteid) => {
+const removeQuiz = async (removeQuizid) => {
   const res = await fetch(
-    `http://localhost:5000/${params.title}/${removeNoteid}`,
+    `http://localhost:5000/${params.title}/${removeQuizid}`,
     {
       method: 'DELETE'
     }
   )
   if (res.status === 200) {
     console.log('delete success')
-    quizList.value = quizList.value.filter((note) => note.id !== removeNoteid)
+    quizList.value = quizList.value.filter((note) => note.id !== removeQuizid)
   } else console.log('error, cannot delete note')
 }
 
@@ -71,16 +71,16 @@ const createQuiz = async (question, A, B, C, answer) => {
   })
   if (res.status === 201) {
     console.log('create success')
-    const addedNote = await res.json()
-    quizList.value.push(addedNote)
-  } else console.log('error, cannot create note')
-  editingNote.value = {}
+    const addedQuiz = await res.json()
+    quizList.value.push(addedQuiz)
+  } else console.log('error, cannot create quiz')
+  editingQuiz.value = {}
 }
 
 //EDIT
-const editingNote = ref({})
-const editMode = async (editNote) => {
-  editingNote.value = editNote
+const editingQuiz = ref({})
+const editMode = async (editQuiz) => {
+  editingQuiz.value = editQuiz
   if (onForm.value === false) {
     onForm.value = true
   }
@@ -98,22 +98,21 @@ const modifyMode = async (edit) => {
     })
   })
   if (res.status === 200) {
-    const modifyNote = await res.json()
-    quizList.value = quizList.value.map((note) =>
-      note.id === modifyNote.id
+    const modifyQuiz = await res.json()
+    quizList.value = quizList.value.map((quiz) =>
+      quiz.id === modifyQuiz.id
         ? {
-            ...note,
-            question: modifyNote.question,
-            a: modifyNote.a,
-            b: modifyNote.b,
-            c: modifyNote.c,
-            answer: modifyNote.answer
+            ...quiz,
+            question: modifyQuiz.question,
+            a: modifyQuiz.a,
+            b: modifyQuiz.b,
+            c: modifyQuiz.c,
+            answer: modifyQuiz.answer
           }
-        : note
+        : quiz
     )
-    console.log('update success')
-  } else console.log('error, cannot update note')
-  editingNote.value = {}
+  }
+  editingQuiz.value = {}
 }
 </script>
 

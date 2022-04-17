@@ -23,11 +23,6 @@ const routes = [
         component: Quiz,
     },
     {
-        path : '/manage-list-page/',
-        name: 'ManageList',
-        component: QuizList
-    },
-    {
         path : '/manage-list-page/:title',
         name: 'Manage',
         component: Manage

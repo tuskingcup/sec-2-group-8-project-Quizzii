@@ -3,31 +3,31 @@
     {
       "id": 1,
       "title": "Movies",
-      "desc": "Which of these is NOT set in Los Angeles?",
+      "desc": "This is quiz about movies.",
       "img": "https://picsum.photos/400/225?random=15"
     },
     {
       "id": 2,
       "title": "Games",
-      "desc": "Which of these is NOT set in Los Angeles?",
+      "desc": "This is quiz about games",
       "img": "https://picsum.photos/400/225?random=1"
     },
     {
       "id": 3,
       "title": "Sports",
-      "desc": "Which of these is NOT set in Los Angeles?",
+      "desc": "This is quiz abount sports.",
       "img": "https://picsum.photos/400/225?random=2"
     },
     {
       "id": 4,
       "title": "Books",
-      "desc": "Which of these is NOT set in Los Angeles?",
+      "desc": "This is quiz about books.",
       "img": "https://picsum.photos/400/225?random=3"
     },
     {
       "id": 5,
       "title": "Animals",
-      "desc": "Which of these is NOT set in Los Angeles?",
+      "desc": "This is quiz about animals.",
       "img": "https://picsum.photos/400/225?random=4"
     }
   ],
