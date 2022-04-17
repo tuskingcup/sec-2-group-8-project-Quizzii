@@ -2,9 +2,7 @@
 import { ref,onBeforeMount } from 'vue'
 import {useRoute} from 'vue-router'
 import router from '../router';
-
 defineEmits(['URL'])
-
 defineProps({
     quizLists:{
         type: Array,
@@ -13,10 +11,7 @@ defineProps({
     status:{
         type: String,   
     }
-
 })
-
-
 </script>
 
 <template>

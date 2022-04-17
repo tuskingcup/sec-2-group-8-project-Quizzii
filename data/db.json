@@ -97,14 +97,6 @@
       "C": "Dirty Harry",
       "answer": "C",
       "id": 3
-    },
-    {
-      "question": "In the Nintendo Game Splatoon 2, what is Marina screen name?",
-      "A": "Vangelis",
-      "B": "MC.princess",
-      "C": "DJ_Hyperfresh",
-      "answer": "C",
-      "id": 4
     }
   ],
   "Sports": [
@@ -165,14 +157,6 @@
       "C": "Dave Grohl",
       "answer": "C",
       "id": 3
-    },
-    {
-      "question": "Which country does the band Rammstein hail from?",
-      "A": "Austria",
-      "B": "Armenia",
-      "C": "Germany",
-      "answer": "C",
-      "id": 4
     }
   ],
   "Animals": [
@@ -201,28 +185,12 @@
       "id": 3
     },
     {
-      "question": "What dog bread is one of the oldest breeds of dog and has flourished since before 400 BCE.",
-      "A": "Pugs",
-      "B": "Chihuahua",
-      "C": "Boxers",
-      "answer": "A",
-      "id": 4
-    },
-    {
       "question": "What is the fastest animal?",
       "A": "Cheetah",
       "B": "Golden Eagle",
       "C": "Peregrine Falcon",
       "answer": "C",
       "id": 5
-    },
-    {
-      "question": "What is the name for a male bee that comes from an unfertilized egg?",
-      "A": "Soldier",
-      "B": "Drone",
-      "C": "Worker",
-      "answer": "B",
-      "id": 6
     }
   ]
 }

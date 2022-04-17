@@ -6,7 +6,7 @@ defineEmits(['createQuiz', 'closeForm', 'editQuiz'])
 const props = defineProps({
   currentQuiz: {
     type: Object,
-    default: {}
+    default : {}
   }
 })
 
@@ -18,17 +18,17 @@ const newQuiz = computed(() => {
     B: props.currentQuiz.B,
     C: props.currentQuiz.C,
     D: props.currentQuiz.D,
-    answer: props.currentQuiz.answer
+    answer: props.currentQuiz.answer == undefined ? '' : props.currentQuiz.answer
   }
 })
 </script>
 
 <template>
-  <div class="overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 md:h-full">
-    <div class="relative p-4 w-full max-w-2xl h-full md:h-auto">
+  <div class="animate-fade-in-down overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 md:h-full">
+    <div class="relative p-4 w-full max-w-2xl h-full mx-auto">
       <!-- content -->
-      <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
-      <div class="relative mx-auto my-auto translate-x-2/4 rounded-lg shadow dark:bg-gray-700">
+      <div class="fixed inset-0 bg-gray-400 bg-opacity-50"></div>
+      <div class="relative rounded-lg shadow dark:bg-gray-700">
         <!-- header -->
         <div class="flex justify-between items-start p-5 rounded-t border-b dark:border-gray-600">
           <div class="text-xl font-semibold tracking-[.15em] uppercase lg:text-2xl dark:text-white">
@@ -50,8 +50,9 @@ const newQuiz = computed(() => {
           <form>
             <div class="p-2 border-[0.75px] border-white rounded-xl">
               <h1 class="text-center my-3">Question</h1>
-              <textarea class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:ring" rows="3"
-                placeholder="Ex: 1 + 1 = ?" v-model="newQuiz.question"></textarea>
+              <textarea
+                class="textarea w-full px-3 py-2 bg-gray-300 text-black"
+                rows="3" placeholder="Ex: 1 + 1 = ?" v-model="newQuiz.question"></textarea>
             </div>
 
             <div class="p-2 border-[0.75px] border-white rounded-xl my-5">
@@ -59,23 +60,24 @@ const newQuiz = computed(() => {
                 <div class="my-3">
                   <p>Choice A</p>
                   <input type="text" v-model="newQuiz.A" placeholder="Ex: 5"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                    class="input input-bordered w-full bg-gray-300 text-black" />
                 </div>
                 <div class="my-3">
                   <p>Choice B</p>
                   <input type="text" v-model="newQuiz.B" placeholder="Ex: 2"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                    class="input input-bordered w-full bg-gray-300 text-black" />
                 </div>
                 <div class="my-3">
                   <p>Choice C</p>
                   <input type="text" v-model="newQuiz.C" placeholder="Ex: 3"
-                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                    class="input input-bordered w-full bg-gray-300 text-black"/>
                 </div>
               </div>
             </div>
             <div class="p-2 border-[0.75px] border-white rounded-xl my-5">
               <div class="mx-3">
                 <div class="my-3">
+<<<<<<< HEAD
                   <p>Answer</p>
                   <!-- <input type="text" v-model="newQuiz.answer" placeholder="Ex: A"
                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" /> -->
@@ -86,6 +88,14 @@ const newQuiz = computed(() => {
                    <option value="B">B</option>
                     <option value="C">C</option>
                 </select>
+=======
+                  <select v-model="newQuiz.answer" class="select bg-gray-300 w-full text-black">
+                    <option value disabled>Select Answer</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                  </select>
+>>>>>>> runkung
                 </div>
               </div>
             </div>
@@ -93,10 +103,11 @@ const newQuiz = computed(() => {
         </div>
         <!-- Modal footer -->
         <div class="flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600">
-          <button v-if="newQuiz.id !== undefined" type="reset" @click="$emit('editQuiz', newQuiz)">
+          <button class="btn btn-outline" v-if="newQuiz.id !== undefined" type="reset"
+            @click="$emit('editQuiz', newQuiz)">
             Save
           </button>
-          <button v-else type="reset" @click="
+          <button class="btn btn-outline" v-else type="reset" @click="
             $emit(
               'createQuiz',
               newQuiz.question,
@@ -108,7 +119,6 @@ const newQuiz = computed(() => {
           ">
             Create
           </button>
-          &nbsp;
         </div>
       </div>
     </div>
@@ -116,4 +126,9 @@ const newQuiz = computed(() => {
 </template>
 
 <style>
+select {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
 </style>
