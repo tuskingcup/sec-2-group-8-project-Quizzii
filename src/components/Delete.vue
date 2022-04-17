@@ -11,11 +11,9 @@ const prop = defineProps({
         require : true
     }
 })
-
 const deleteText = computed(()=>{
     return {id : prop.delete.id,quiz : prop.delete.quiz}
 })
-
 </script>
  
 <template>
@@ -48,5 +46,4 @@ const deleteText = computed(()=>{
 </template>
  
 <style>
-
 </style>
