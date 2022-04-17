@@ -1,6 +1,7 @@
 <script setup>
 import Form from '../components/form.vue'
 import Show from '../components/show.vue'
+import Delete from '../components/Delete.vue'
 import { useRoute, useRouter } from 'vue-router'
 import { onBeforeMount, ref } from 'vue'
 const { params } = useRoute()
@@ -26,6 +27,7 @@ const showForm = () => {
   editingNote.value = {}
 }
 //DELETE
+const check = ref(false)
 const removeQuiz = async (removeNoteid) => {
   const res = await fetch(
     `http://localhost:5000/${params.title}/${removeNoteid}`,
@@ -37,19 +39,18 @@ const removeQuiz = async (removeNoteid) => {
     console.log('delete success')
     quizList.value = quizList.value.filter((note) => note.id !== removeNoteid)
   } else console.log('error, cannot delete note')
+  check.value = false
 }
+
+const deleteQuiz = ref({})
 const popUp = (id, quiz) => {
-  if (
-    confirm(`Do you want to delete this quiz? \n Id : ${id} \n Quiz : ${quiz}`)
-  ) {
-    removeQuiz(id)
-  } else {
-    console.log('cancel delete')
-  }
+  check.value = true
+  deleteQuiz.value = {id : id,quiz : quiz}
 }
 //CREATE
 const createQuiz = async (question, A, B, C, answer) => {
-  const res = await fetch(`http://localhost:5000/${params.title}`, {
+  if(question && A && B && C && answer != '' || undefined){
+      const res = await fetch(`http://localhost:5000/${params.title}`, {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify({
@@ -66,6 +67,8 @@ const createQuiz = async (question, A, B, C, answer) => {
     quizList.value.push(addedNote)
   } else console.log('error, cannot create note')
   editingNote.value = {}
+  }
+  console.log('error')
 }
 //EDIT
 const editingNote = ref({})
@@ -125,6 +128,7 @@ const modifyMode = async (edit) => {
       </span>
   </div>
   <Show :quizList="quizList" @editNote="editMode" @deleteNote="popUp" />
+  <Delete :check="check" :delete="deleteQuiz" @confirm="removeQuiz"></Delete>
 </template>
 
 <style>
