@@ -1,6 +1,6 @@
 <script setup>
-import Form from '../components/form.vue'
-import Show from '../components/show.vue'
+import Form from '../components/Form.vue'
+import Show from '../components/Show.vue'
 import Delete from '../components/Delete.vue'
 import { useRoute, useRouter } from 'vue-router'
 import { onBeforeMount, ref } from 'vue'

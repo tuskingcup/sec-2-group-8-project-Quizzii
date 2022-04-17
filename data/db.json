@@ -63,6 +63,22 @@
       "C": "Spaceman From Pluto",
       "answer": "A",
       "id": 4
+    },
+    {
+      "question": "The 1996 film Fargo is primarily set in which US state?",
+      "A": "North Dakota",
+      "B": "South Dakota",
+      "C": "Minnesota",
+      "answer": "C",
+      "id": 5
+    },
+    {
+      "question": "What breed of dog was Marley in the film Marley Me (2008)?",
+      "A": "Golden Retriever",
+      "B": "Labrador Retriever",
+      "C": "Shiba Inu",
+      "answer": "B",
+      "id": 6
     }
   ],
   "Games": [
@@ -89,6 +105,22 @@
       "C": "Dirty Harry",
       "answer": "C",
       "id": 3
+    },
+    {
+      "question": "How many dice are used in the game of Yahtzee?",
+      "A": "Four",
+      "B": "Five",
+      "C": "Six",
+      "answer": "B",
+      "id": 4
+    },
+    {
+      "question": "What special item did the creators of Cards Against Humanity ship for their Black Friday pack?",
+      "A": "A Card Expansion",
+      "B": "A Racist Toy",
+      "C": "Bull Feces",
+      "answer": "C",
+      "id": 5
     }
   ],
   "Sports": [
@@ -127,28 +159,36 @@
   ],
   "Books": [
     {
-      "question": "In the  Rossini opera, what was the name of &#039;The Barber of Seville?",
-      "A": "Fernando",
-      "B": "Figaro",
-      "C": "Angelo",
+      "question": "Which novel by John Grisham was conceived on a road trip to Florida while thinking about stolen books with his wife?",
+      "A": "Rogue Lawyer",
+      "B": "Camino Island",
+      "C": "The Litigators",
       "answer": "B",
       "id": 1
     },
     {
-      "question": "Who is the frontman of the band 30 Seconds to Mars?",
-      "A": "Jared Leto",
-      "B": "Matthew Bellamy",
-      "C": "Gerard Way",
+      "question": "In The Lies of Locke Lamora, what title is Locke known by in the criminal world?",
+      "A": "The Thorn of Camorr",
+      "B": "The Thorn of Emberlain",
+      "C": "The Thorn of the Marrows",
       "answer": "A",
       "id": 2
     },
     {
-      "question": "Which member of the Foo Fighters was previously the drummer for Nirvana?",
-      "A": "Chris Shiflett",
-      "B": "Taylor Hawkins",
-      "C": "Dave Grohl",
+      "question": "In the Magic: The Gathering universe,  the Antiquities, Ice Age, and Alliances expansions take place on which continent?",
+      "A": "Aerona",
+      "B": "Shiv",
+      "C": "Terisiare",
       "answer": "C",
       "id": 3
+    },
+    {
+      "question": "What is the fourth book of the Old Testament?",
+      "A": "Genesis",
+      "B": "Numbers",
+      "C": "Exodus",
+      "answer": "B",
+      "id": 4
     }
   ],
   "Animals": [
@@ -183,6 +223,22 @@
       "C": "Peregrine Falcon",
       "answer": "C",
       "id": 5
+    },
+    {
+      "question": "Which of these species is not extinct?",
+      "A": "Komodo dragon",
+      "B": "Saudi gazelle",
+      "C": "Tasmanian tiger",
+      "answer": "A",
+      "id": 6
+    },
+    {
+      "question": "What is the name of the family that the domestic cat is a member of?",
+      "A": "Felibae",
+      "B": "Felinae",
+      "C": "Felidae",
+      "answer": "C",
+      "id": 7
     }
   ]
 }

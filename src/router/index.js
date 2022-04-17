@@ -1,8 +1,8 @@
 import {createRouter,createWebHistory} from 'vue-router'
 import Home from '../views/HomePage.vue'
 import QuizList from '../views/QuizListPage.vue'
-import Quiz from '../views/QuizGame.vue'
-import Manage from '../views/QuizManage.vue'
+import QuizGame from '../views/QuizGame.vue'
+import QuizManage from '../views/QuizManage.vue'
 
 
 const history = createWebHistory();
@@ -18,14 +18,14 @@ const routes = [
         component: QuizList
     },
     {
-        path : '/quiz-list-page/:title',
+        path : '/quiz-list-page/:status/:title',
         name: 'Quiz',
-        component: Quiz,
+        component: QuizGame,
     },
     {
-        path : '/manage-list-page/:title',
+        path : '/manage-list-page/:status/:title',
         name: 'Manage',
-        component: Manage
+        component: QuizManage
     }
 ]
 

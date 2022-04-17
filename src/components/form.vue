@@ -156,8 +156,4 @@ const newQuiz = computed(() => {
 </template>
 
 <style>
-select {
-  overflow-y: hidden; /* Hide vertical scrollbar */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-}
 </style>

@@ -5,7 +5,7 @@ import Quizplay from '../components/QuizPlay.vue'
 const { params } = useRoute()
 const myrouter = useRouter()
 const goBack = () =>
-  myrouter.push({ name: 'QuizList', params: { status: 'play' } })
+  myrouter.go(-1)
 const quizList = ref([])
 console.log(params.title)
 const getQuiz = async (param) => {
@@ -66,7 +66,7 @@ const answerCheck = (ans) => {
   }
   return num
 }
-//--------------Quiz Controll---------------
+//--------------Quiz Control---------------
 const quizComplete = ref(false)
 const currentQuiz = ref(0)
 let score = ref(0)

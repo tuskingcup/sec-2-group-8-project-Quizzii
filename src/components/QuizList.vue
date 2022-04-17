@@ -3,7 +3,7 @@ import { ref, onBeforeMount } from 'vue'
 import { useRoute } from 'vue-router'
 import router from '../router'
 
-defineEmits(['URL'])
+defineEmits(['URL', 'addTitle'])
 
 defineProps({
   quizLists: {

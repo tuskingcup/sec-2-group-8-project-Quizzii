@@ -1,5 +1,5 @@
 <script setup>
-import bar from '../components/Bar.vue'
+import Bar from '../components/Bar.vue'
 import QuizList from '../components/QuizList.vue'
 import Search from '../components/Search.vue'
 import { ref, onBeforeMount, computed } from 'vue'
@@ -18,13 +18,12 @@ const route = useRoute()
 const status = computed(() => route.params.status)
 
 function getFilter(filter) {
-  console.log(filter)
   quizLists.value = filter
 }
 </script>
 
 <template>
-  <bar></bar>
+  <Bar></Bar>
   <Search :quizLists="quizLists" @filter="getFilter"></Search>
   <QuizList :status="status" :quizLists="quizLists"></QuizList>
 </template>
