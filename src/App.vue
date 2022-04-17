@@ -1,18 +1,13 @@
 <script setup>
+import {useRoute} from 'vue-router'
 
 </script>
  
 <template>
- <div>
-  <div>
-    <router-link :to="{ name: 'Home'}">Home</router-link> |
-  </div>
-  <div>
-    <router-view></router-view>
-  </div>
-</div>
+
+<router-view> </router-view>
 </template>
  
-<style scoped>
+<style>
 
 </style>
