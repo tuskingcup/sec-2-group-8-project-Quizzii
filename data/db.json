@@ -83,28 +83,12 @@
   ],
   "Games": [
     {
-      "question": "Which retired American football quarterback played himself in Ace Ventura: Pet Detective and Little Nicky?",
-      "A": "John Elway",
-      "B": "Tom Brady",
-      "C": "Dan Marino",
+      "question": "What the name of the main protagonist in the Legend of Zelda franchise?",
+      "A": "Link",
+      "B": "Mario",
+      "C": "Zelda",
       "answer": "A",
       "id": 1
-    },
-    {
-      "question": "In which 1973 film does Yul Brynner play a robotic cowboy who malfunctions and goes on a killing spree?",
-      "A": "Runaway",
-      "B": "Westworld",
-      "C": "Android",
-      "answer": "B",
-      "id": 2
-    },
-    {
-      "question": "Which iconic character is featured in movies such as The Enforcer, Sudden Impact, and The Dead Pool?",
-      "A": "James Bond",
-      "B": "Indiana Jones",
-      "C": "Dirty Harry",
-      "answer": "C",
-      "id": 3
     },
     {
       "question": "How many dice are used in the game of Yahtzee?",
@@ -112,7 +96,7 @@
       "B": "Five",
       "C": "Six",
       "answer": "B",
-      "id": 4
+      "id": 2
     },
     {
       "question": "What special item did the creators of Cards Against Humanity ship for their Black Friday pack?",
@@ -120,39 +104,39 @@
       "B": "A Racist Toy",
       "C": "Bull Feces",
       "answer": "C",
-      "id": 5
+      "id": 3
     }
   ],
   "Sports": [
     {
-      "question": "Which retired American football quarterback played himself in Ace Ventura: Pet Detective and Little Nicky?",
-      "A": "John Elway",
-      "B": "Tom Brady",
-      "C": "Dan Marino",
+      "question": "How many soccer players should be on the field at the same time?",
+      "A": "22",
+      "B": "24",
+      "C": "26",
       "answer": "A",
       "id": 1
     },
     {
-      "question": "In which 1973 film does Yul Brynner play a robotic cowboy who malfunctions and goes on a killing spree?",
-      "A": "Runaway",
-      "B": "Westworld",
-      "C": "Android",
+      "question": "Which team won 2014 FIFA World Cup in Brazil",
+      "A": "Argentina",
+      "B": "Germany",
+      "C": "Brazil",
       "answer": "B",
       "id": 2
     },
     {
-      "question": "Which iconic character is featured in movies such as The Enforcer, Sudden Impact, and The Dead Pool?",
-      "A": "James Bond",
-      "B": "Indiana Jones",
-      "C": "Dirty Harry",
-      "answer": "C",
+      "question": "In golf, what name is given to a hole score of two under par?",
+      "A": "Birdie",
+      "B": "Eagle",
+      "C": "Albatross",
+      "answer": "B",
       "id": 3
     },
     {
-      "question": "In the Nintendo Game Splatoon 2, what is Marina screen name?",
-      "A": "Vangelis",
-      "B": "MC.princess",
-      "C": "DJ_Hyperfresh",
+      "question": "Who won the UEFA Champions League in 2016?",
+      "A": "FC Bayern Munich",
+      "B": "Manchester City F.C.",
+      "C": "Real Madrid C.F.",
       "answer": "C",
       "id": 4
     }
