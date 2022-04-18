@@ -1,12 +1,14 @@
 <script setup>
 import { reactive, ref, computed } from 'vue'
 defineEmits(['createQuiz', 'closeForm', 'editQuiz'])
+
 const props = defineProps({
   currentQuiz: {
     type: Object,
     default: {},
   },
 })
+
 const newQuiz = computed(() => {
   return {
     id: props.currentQuiz.id,
